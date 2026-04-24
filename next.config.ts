@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
-// Здесь можно включать настройки Next.js.
-// Пока оставляем объект пустым, чтобы MVP был максимально простым.
-const nextConfig: NextConfig = {};
+const nextConfig: NextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+};
 
 export default nextConfig;
